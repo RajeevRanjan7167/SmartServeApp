@@ -1,0 +1,13 @@
+.topnav a:hover {
+  border-bottom: 3px solid red;
+}
+
+.alignleft {
+  float: left;
+  font-size: 15px; 
+}
+
+.alignright {
+  float: right;
+  font-size: 15px; 
+}

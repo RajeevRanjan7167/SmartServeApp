@@ -1,0 +1,21 @@
+table {
+    border-collapse:separate;
+    border:solid #2e6da4 1px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+}
+
+td, th {
+    
+    border-left:solid #2e6da4 1px;
+    border-top:solid #2e6da4 1px;
+}
+
+th {
+    background-color: #337ab7;
+    border-top: none;
+}
+
+td:first-child {
+     border-left: none;
+}

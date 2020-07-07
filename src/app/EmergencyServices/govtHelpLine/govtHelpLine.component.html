@@ -1,0 +1,71 @@
+<div class="content">
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card ">
+          <div class="card-header card-header-primary" style="height:45px">
+            <h4 class="card-title">Government Helpline</h4>
+          </div>
+
+          <div class="card-body">
+            <form [formGroup] ="GovernmentHelplineForm" >
+
+              <div class="row">
+
+                <div class="col-md-4"></div>
+
+                <div class="col-md-4">
+                  <!-- <select class="browser-default custom-select" id = "state"  formControlName="state"> 
+                    <option selected *ngFor="let state of statelst" [ngValue]="state">{{state}}</option>
+                  </select> -->
+
+                  <select class="browser-default custom-select" formControlName="state" id="state">
+                    <option *ngFor="let order of orders; let i = index" [value]="orders[i].stateCode">
+                      {{orders[i].stateName}}
+                    </option>
+                  </select>
+
+                </div>
+
+                <div class="col-md-4"></div>
+
+              </div>
+
+              <br/>
+              <div class="row">
+
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                  <div class="form-group bmd-form-group">
+                    <div style="color:white;padding:20px; height: 300px; border: 2px solid black">                    
+                      <h2 style="color: #000000; font-size: x-large; text-underline-position: below;">Primary(Central)</h2>
+                      <br/>
+                      <h2 style="color: #000000; font-size: medium;"><span><i data-action-type ="view" class="fa fa-phone"></i></span>&nbsp;&nbsp; {{strCentralPhone}}</h2>
+                      <h2 style="color: #000000; font-size: medium;"><span><i data-action-type ="view" class="fa fa-envelope"></i></span>&nbsp;&nbsp;{{strCentralEnvelope}}</h2>
+                      <h2 style="color: #000000; font-size: medium;"><span><i data-action-type ="view" class="fa fa-facebook"></i></span>&nbsp;&nbsp;&nbsp;{{strCentralFacebook}}</h2>
+                      <h2 style="color: #000000; font-size: medium;"><span><i data-action-type ="view" class="fa fa-twitter"></i></span>&nbsp;&nbsp;{{strCentralTwitter}}</h2>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-5">
+                  <div class="form-group bmd-form-group">
+                    <div style="color:white;padding:20px;  height: 300px; border: 2px solid black ">                    
+                      <h2 style="color: #000000; font-size:x-large;">State</h2>
+                      <br/>
+                      <h2 style="color: #000000; font-size: medium;"><span><i data-action-type ="view" ></i></span>{{strStateName}}</h2>
+                      <h2 style="color: #000000; font-size: medium;"><span><i data-action-type ="view" class="fa fa-phone"></i></span>&nbsp; {{strStatelPhone}}</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-1"></div>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

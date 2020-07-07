@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "SmartServerApp"
+    }
+  },
+  "defaultProject": "SmartServerApp",
+  "cli": {
+    "analytics": "c718cd8c-9939-400d-b151-2fb5ac830a8c"
+  }
 }

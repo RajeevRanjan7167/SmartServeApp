@@ -1,0 +1,12 @@
+{
+    "HOME": {
+      "TITLE": "Smart Serve",
+      "SELECT": "Contact Us",
+      "MENUHHOME": "Home",
+      "menuHealthSafety": "Health Safety",
+      "menuEmergencyServices": "Emergency Services",
+      "menuCovidDashboard": "Covid Dashboard",
+      "menuLocalCommunity": "Local Community",
+      "menuGovernmentHelpline": "Government Helpline"
+    }
+  }

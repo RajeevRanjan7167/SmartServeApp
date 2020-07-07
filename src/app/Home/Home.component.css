@@ -1,0 +1,115 @@
+fieldset.scheduler-border {
+  border: 2px groove #ddd !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+  height: 220px !important;
+  -webkit-box-shadow: 0px 0px 0px 0px #000;
+  box-shadow: 0px 0px 0px 0px #000;
+}
+
+fieldset.scheduler-border-head {
+  border: 2px groove #ddd !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+  height: 260px !important;
+  -webkit-box-shadow: 0px 0px 0px 0px #000;
+  box-shadow: 0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  width: auto;
+  padding: 0 10px;
+  border-bottom: none;
+}
+
+.total {
+  background-color: lightblue !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(169, 173, 169, 0),
+    rgb(114, 177, 236)
+  );
+  font-weight: bold;
+  width: 100%;
+}
+
+.active {
+  background-color: lightsalmon !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  );
+  font-weight: bold;
+  width: 100%;
+}
+
+.recoverd {
+  background-color: lightgreen !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(169, 173, 169, 0),
+    rgb(0, 255, 0)
+  );
+  font-weight: bold;
+  width: 100%;
+}
+
+.deceased {
+  background-color: lightgray !important;
+  background-image: linear-gradient(
+    to right,
+    rgb(247, 251, 252),
+    rgb(202, 205, 207)
+  );
+  font-weight: bold;
+  width: 100%;
+}
+
+.buttonRadius {
+  border-radius: 10px;
+}
+
+.container {
+  /* Make Flag at the center of the container  */
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+/* Stripe  */
+.stripe {
+  width: 45px;
+  height: 10px;
+}
+/* Saffron Stripe  */
+#saffron {
+  background: #ff9933;
+}
+/* White Stripe */
+#white {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Green Stripe  */
+#green {
+  background: #138808;
+}
+/* Ashoka Chakra Image */
+.ashok_chakra {
+  height: 10px;
+  width: 10px;
+}
+/* Patriotic Message */
+.message {
+  text-align: center;
+}
+/* Color of INDIA */
+.message span {
+  /* Navy Blue of Ashoka Chakra */
+  color: #000080;
+}

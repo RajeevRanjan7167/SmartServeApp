@@ -1,0 +1,42 @@
+
+<div class="content">
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card ">
+          <div class="card-header card-header-primary" style="height:45px">
+            <h4 class="card-title">Local Community</h4>
+          </div>
+
+          <div class="card-body">
+            <form [formGroup] ="LocalCommunityForm" >
+
+              <div class="row">
+
+                <div class="col-md-4">
+                  <select class="browser-default custom-select" id = "state" formControlName="state"> 
+                    <option selected *ngFor="let state of statelst" [ngValue]="state">{{state}}</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <select class="browser-default custom-select" id = "dist" formControlName="dist"> 
+                    <option selected *ngFor="let dist of districtlst" [ngValue]="dist">{{dist}}</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <select class="browser-default custom-select" id = "city" formControlName="city"> 
+                    <option selected *ngFor="let city of citylst" [ngValue]="city">{{city}}</option>
+                  </select>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
