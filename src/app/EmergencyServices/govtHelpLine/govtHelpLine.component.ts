@@ -5,6 +5,7 @@ import { State } from '../../models/state';
 import { ApiServicesService } from '../../services/apiServices.service';
 import { of } from 'rxjs';
 import { environment } from '../../../environments/environment';
+import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-govtHelpLine',
@@ -60,9 +61,10 @@ export class GovtHelpLineComponent implements OnInit {
     ];
   }
 
-  loadState() {
-    this.apiServicesService.getstate().subscribe((stateInfor: State[]) => {
-      this.state = stateInfor;
+ async loadState() {
+    (await this.apiServicesService.getstate()).subscribe((stateInfor: State[]) => {
+      this.orders = stateInfor;
+      
       //this.statelst = this.state;
     });
   }
