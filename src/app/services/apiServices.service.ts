@@ -12,7 +12,9 @@ export class ApiServicesService {
 
   constructor(private http: HttpClient) {}
 
-  getstate(): Observable<State[]> {
-    return this.http.get<State[]>(this.baseUrl);
+   async getstate(): Promise<Observable<State[]>> {
+    const promise = await this.http.get<State[]>(this.baseUrl).toPromise();
+    
+    return of(promise);
   }
 }
