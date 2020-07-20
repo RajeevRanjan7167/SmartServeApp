@@ -15,11 +15,8 @@
                 <div class="col-md-4"></div>
 
                 <div class="col-md-4">
-                  <!-- <select class="browser-default custom-select" id = "state"  formControlName="state"> 
-                    <option selected *ngFor="let state of statelst" [ngValue]="state">{{state}}</option>
-                  </select> -->
-
-                  <select class="browser-default custom-select" formControlName="state" id="state">
+                 
+                  <select class="browser-default custom-select" [(ngModel)]="selectedLevel" formControlName="state" id="state" (change)='selected()'>
                     <option *ngFor="let order of orders; let i = index" [value]="orders[i].stateCode">
                       {{orders[i].stateName}}
                     </option>
@@ -63,6 +60,15 @@
               </div>
               
             </form>
+            <!-- Footer -->
+            <footer class="page-footer font-small blue">
+              <div class="footer-copyright text-center py-3">
+                <a href="#" [routerLink] = "['/TermsAndCond']" routerLinkActive="router-link-active">Terms And Condition</a> |
+                <a href="#" [routerLink] = "['/PrivacyPolicy']" routerLinkActive="router-link-active">Privacy Policy</a> |
+                <a href="#" [routerLink] = "['/Disclaimer']" routerLinkActive="router-link-active">Disclaimer</a>
+              </div>
+            </footer>
+            <!-- Footer -->             
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@
               <div class="row">
 
                 <div class="col-md-4">
-                  <select class="browser-default custom-select" id = "state" formControlName="state"> 
+                  <select class="browser-default custom-select" id = "state"  formControlName="state"> 
                     <option selected *ngFor="let state of statelst" [ngValue]="state">{{state}}</option>
                   </select>
                 </div>
@@ -36,17 +36,26 @@
               <a href="#" [routerLink] = "['/govtHelpLine']" routerLinkActive="router-link-active">Government Helpline</a>
               <br/>
               <br/>
-              <a href="#" [routerLink] = "['/emgenServices']" routerLinkActive="router-link-active">Emergency Services</a>
+              <a href="#" [routerLink] = "['/emgenServices']" routerLinkActive="router-link-active">Covid Hospitals</a>
               <br/>
               <br/>
-              <a href="#" [routerLink] = "['/nearByLabFacility']" routerLinkActive="router-link-active">Nearby Labs Facilities</a>
+              <a href="#" [routerLink] = "['/ambulanceServices']" routerLinkActive="router-link-active">Ambulance Service</a>              
               <br/>
               <br/>
-              <a href="#" [routerLink] = "['/ambulanceServices']" routerLinkActive="router-link-active">Ambulance Service</a>
+              <a href="#" [routerLink] = "['/nearByLabFacility']" routerLinkActive="router-link-active">Covid Test Labs</a>
               <br/>
               <br/>
               <a href="#" [routerLink] = "['/localNGO']" routerLinkActive="router-link-active">Local NGO</a>
             </form>
+            <!-- Footer -->
+            <footer class="page-footer font-small blue">
+              <div class="footer-copyright text-center py-3">
+                <a href="#" [routerLink] = "['/TermsAndCond']" routerLinkActive="router-link-active">Terms And Condition</a> |
+                <a href="#" [routerLink] = "['/PrivacyPolicy']" routerLinkActive="router-link-active">Privacy Policy</a> |
+                <a href="#" [routerLink] = "['/Disclaimer']" routerLinkActive="router-link-active">Disclaimer</a>
+              </div>
+            </footer>
+            <!-- Footer -->             
           </div>
         </div>
       </div>

@@ -1,3 +1,65 @@
-<p>
-  emgenServices works!
-</p>
+<div class="content">
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card ">
+          <div class="card-header card-header-primary" style="height:45px">
+            <h4 class="card-title" style="text-align: center">Covid Hospital</h4>
+          </div>
+
+          <div class="card-body">
+            <form [formGroup]="CovidHospitalForm">
+
+              <div class="row">
+
+                <div class="col-md-4">                 
+                  <select class="browser-default custom-select" id = "state" formControlName="state"> 
+                    <!-- <option selected *ngFor="let state of statelst" [ngValue]="state">{{state}}</option> -->
+                  </select>
+                </div>
+
+                <div class="col-md-4">                 
+                  <select class="browser-default custom-select" id = "city" formControlName="city"> 
+                    <!-- <option selected *ngFor="let state of statelst" [ngValue]="state">{{state}}</option> -->
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <select class="browser-default custom-select" id = "dist" formControlName="dist"> 
+                    <!-- <option selected *ngFor="let dist of districtlst" [ngValue]="dist">{{dist}}</option> -->
+                  </select>
+                </div>
+
+                <!-- <div class="col-md-2"></div>               -->
+              </div>
+
+              <br/>
+              
+              <div class="row">
+                <div class="col-md-12">   
+                  <div class="form-group bmd-form-group">
+
+                    <ag-grid-angular style="height: 350px;" colResizeDefault='shift' class="ag-theme-alpine" rowSelection='single'
+                    (rowClicked)='onRowClicked($event)' (cellClicked)='onCellClicked($event)' (selectionChanged) = 'onSelectionChanged($event)'
+                      class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs">
+                    </ag-grid-angular>                   
+
+                  </div>
+                </div>   
+              </div>               
+            </form>
+            <!-- Footer -->
+            <footer class="page-footer font-small blue">
+              <div class="footer-copyright text-center py-3">
+                <a href="#" [routerLink] = "['/TermsAndCond']" routerLinkActive="router-link-active">Terms And Condition</a> |
+                <a href="#" [routerLink] = "['/PrivacyPolicy']" routerLinkActive="router-link-active">Privacy Policy</a> |
+                <a href="#" [routerLink] = "['/Disclaimer']" routerLinkActive="router-link-active">Disclaimer</a>
+              </div>
+            </footer>
+            <!-- Footer -->             
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

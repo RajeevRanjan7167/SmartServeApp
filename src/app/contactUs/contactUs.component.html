@@ -1,0 +1,84 @@
+<div class="content">
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-primary" style="height: 45px;">
+            <h4 class="card-title" style="text-align: center;"> Contact Us</h4>
+          </div>
+
+          <br/>
+          <div class="card-body">
+
+            <form [formGroup]="ContactUsForm" (ngSubmit)="ContactUsCreation()" >
+
+              <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                  <div class="form-group bmd-form-group">
+                    <input type="text" class="form-control"  id="userName" formControlName="userName" 
+                                        placeholder="Name">
+                  </div>
+                </div>
+                <div class="col-sm-3"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                  <div class="form-group bmd-form-group">
+                    <input type="text" class="form-control"  id="userNameContactNumber" formControlName="userNameContactNumber" 
+                                       placeholder="Contact Number">
+                  </div>
+                </div>
+                <div class="col-sm-3"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                  <div class="form-group bmd-form-group">
+                    <input type="text" class="form-control"  id="userNameEmailAddress" formControlName="userNameEmailAddress"
+                                       placeholder="Email Address">
+                  </div>
+                </div>
+                <div class="col-sm-3"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                  <div class="form-group bmd-form-group">
+                    <textarea rows="4" class="form-control" cols="50" name="comment" 
+                              id="userQuery" formControlName="userQuery"
+                              placeholder="Enter your query here..."></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-3"></div>
+              </div>
+              
+              <br/>
+              <div class="form-group text-center">
+                <button class="btn btn-success btn mr-2" type="submit">Submit</button>
+                <button class="btn btn-danger " (click)="cancel()" type="button">Cancel</button>
+              </div>  
+
+            </form>
+
+            <!-- Footer -->
+            <footer class="page-footer font-small blue">
+              <div class="footer-copyright text-center py-3">
+                <a href="#" [routerLink] = "['/TermsAndCond']" routerLinkActive="router-link-active">Terms And Condition</a> |
+                <a href="#" [routerLink] = "['/PrivacyPolicy']" routerLinkActive="router-link-active">Privacy Policy</a> |
+                <a href="#" [routerLink] = "['/Disclaimer']" routerLinkActive="router-link-active">Disclaimer</a>
+              </div>
+            </footer>
+            <!-- Footer --> 
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

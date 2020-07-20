@@ -18,6 +18,11 @@ import { LocalCommunityComponent } from './LocalCommunity/LocalCommunity.compone
 import { EmergencyServicesModule } from './EmergencyServices/EmergencyServices.module';
 
 import { AgGridModule } from 'ag-grid-angular';
+import { TermsAndConditionComponent } from './TermsAndCondition/TermsAndCondition.component';
+import { PrivacyPolicyComponent } from './PrivacyPolicy/PrivacyPolicy.component';
+import { DisclaimerComponent } from './Disclaimer/Disclaimer.component';
+import { ContactUsComponent } from './contactUs/contactUs.component';
+
 // AoT requires an exported function for factories
 // tslint:disable-next-line: typedef
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -25,35 +30,38 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 }
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      HealthSafetyComponent,
-      EmergencyServicesComponent,
-      HomeComponent,
-      CovidDashboardComponent,
-      LocalCommunityComponent
-   ],
-   imports: [
-      BrowserModule,
-      AppRoutingModule,
-      BrowserModule,
-      NgbModule,
-      HttpClientModule,
-      FormsModule,
-      NgMarqueeModule,
-      ReactiveFormsModule,
-      EmergencyServicesModule,
-      //ngx-translateandtheloadermodule\nHttpClientModule,
-      AgGridModule.withComponents([]),
-      TranslateModule.forRoot({
-         loader: {
-               provide: TranslateLoader,
-               useFactory: HttpLoaderFactory,
-               deps: [HttpClient]
-         }
-      })
-   ],
-   providers: [],
-   bootstrap: [AppComponent]
- })
- export class AppModule { }
+  declarations: [
+    AppComponent,
+    HealthSafetyComponent,
+    EmergencyServicesComponent,
+    HomeComponent,
+    CovidDashboardComponent,
+    LocalCommunityComponent,
+    TermsAndConditionComponent,
+    PrivacyPolicyComponent,
+    DisclaimerComponent,
+    ContactUsComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserModule,
+    NgbModule,
+    HttpClientModule,
+    FormsModule,
+    NgMarqueeModule,
+    ReactiveFormsModule,
+    EmergencyServicesModule,
+    AgGridModule.withComponents([]),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}

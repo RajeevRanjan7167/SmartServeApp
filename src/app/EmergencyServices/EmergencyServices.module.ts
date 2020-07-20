@@ -10,6 +10,7 @@ import { EmergencyServiceRoutingModule } from './EmergencyServices.module.routin
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgMarqueeModule } from 'ng-marquee';
+import { AgGridModule } from 'ag-grid-angular';
 
 import { EmgenServicesComponent } from '././emgenServices/emgenServices.component';
 import { AmbulanceServicesComponent } from '././ambulanceServices/ambulanceServices.component';
@@ -43,6 +44,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 
     FormsModule,
     ReactiveFormsModule,
+    AgGridModule.withComponents([]),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
